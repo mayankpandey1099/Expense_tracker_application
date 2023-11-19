@@ -1,0 +1,267 @@
+body {
+  background-color: #333;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 10px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.form-control {
+  display: ruby-text;
+  width: 76%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  -webkit-appearance: checkbox;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--bs-body-bg);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+h1 {
+  text-align: center;
+  margin-top: 60px;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+h2{
+    padding-right: 200px;
+    font-size: 3rem;
+    color: gold;
+    font-family: initial;
+}
+
+li {
+  margin: 5px;
+  padding: 2px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: x-large;
+  font-style: oblique;
+  font-weight: bolder;
+}
+.nav {
+    background-color: #222;
+    display: inline-flex;
+    justify-content: center;
+    align-items: first baseline;
+    padding: 5px;
+    width: 90%;
+    margin-block: -10px;
+    margin-inline: 30px;
+}
+
+.nav-link {
+  color: #fff;
+  background-color: #444;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+span {
+  margin-left: 10px;
+  display: inline-block;
+}
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d52c2c;
+  color: #faf5f5;
+  border: none;
+  padding: 0px 10px;
+  cursor: pointer;
+  float: right;
+  border-radius: 5px;
+  margin-inline-start: 10px;
+  margin-top: 5px;
+  margin-left: 05px;
+}
+
+#logoutButton {
+  order: 1; /* Move the logout button to the right */
+}
+
+#premiumbtn {
+  order: 0; /* Move the premium button to the left */
+}
+button:hover {
+  background-color: #555;
+}
+
+form {
+  width: 100%;
+  padding: 20px;
+  /* box-sizing: border-box; */
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #777;
+  border-radius: 10px;
+}
+
+#submitButton {
+  margin-top: 0px;
+}
+
+label {
+  color: #ffffff;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input {
+  background-color: #555;
+  color: #ffffff;
+  border: 1px solid #555;
+  margin-bottom: 15px;
+  padding: 8px;
+  width: calc(100% - 16px);
+  border-radius: 5px;
+}
+.container {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  float: left;
+  max-width: 40%;
+  margin-left: 25px;
+  padding: 5px;
+}
+
+.right-section {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-radius: 8px;
+  width: 50%;
+  float: right;
+  margin-right: 25px;
+  margin-bottom: 10px;
+}
+
+.expense-item {
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+
+#expenseList {
+  /* margin-bottom: 10px; */
+  padding-bottom: 50px;
+}
+
+.pagination-container {
+  border-radius: 5px;
+  margin-left: 20px;
+  text-align: inherit;
+}
+
+.pagination-container button {
+  background-color: #555;
+  color: #ffffff;
+  border: solid;
+  padding: 0px 15px;
+  margin: 0px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.pagination-container button:hover {
+  background-color: #777;
+}
+
+#premium-status {
+  color: #4ca6a6;
+  margin-top: 20px;
+}
+
+leaderboard {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  /* margin-top: 10px; */
+  width: 60%;
+  margin: 20px;
+  margin-left: 20px;
+  overflow: auto;
+  text-align: center;
+}
+#leaderboard h2 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 350px;
+}
+
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-theme .navbar {
+  background-color: #181818;
+}
+
+.dark-theme .nav-link {
+  background-color: #292929;
+}
+
+.dark-theme .container {
+  border: 1px solid #555;
+}
+
+.dark-theme button {
+  background-color: #8f2727;
+}
+
+.dark-theme button:hover {
+  background-color: #333;
+}
+
+.dark-theme form {
+  background-color: #1a1a1a;
+  border: 1px solid #444;
+}
+
+.dark-theme input {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+}
+
+.dark-theme .right-section {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-theme #expenseList {
+  background-color: #121212;
+  border: 1px solid #444;
+}
+
+.dark-theme .pagination-container button {
+  background-color: #292929;
+}
+
+.dark-theme .pagination-container button:hover {
+  background-color: #1f1f1f;
+}
+
+.dark-theme #leaderboard {
+  background-color: #121212;
+  color: #fff;
+  width: 300px;
+  margin-right: 20px;
+}
