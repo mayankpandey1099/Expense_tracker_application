@@ -101,9 +101,15 @@ sequelize.sync({force: false}).then(() => {
 });
 
 // listening on port
-app.listen(port, () => {
-  console.log(`server is running at port ${port}`);
-  //sending the static file via redirectingRoute
-  app.use("/api", redirectingRoute);
-  
-});
+async function initiate() {
+  try {
+    await sequelize.sync();
+    app.listen(port, () => {
+      console.log(`Server is running at ${port}`);
+      app.use("/api", redirectingRoute);
+    });
+  } catch (error) {
+    console.log(error);
+  }
+}
+initiate();
