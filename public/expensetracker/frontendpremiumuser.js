@@ -1,5 +1,5 @@
 
-const apiUrl1 = `http://localhost:3000`;
+const apiUrl1 = `http://3.110.108.119:3000`;
 const navbar = document.getElementById("navbar");
 const isPremium = localStorage.getItem("isPremium");
 const premiumbtn = document.getElementById("premiumbtn");

@@ -1,7 +1,7 @@
 const password = document.getElementById("password");
 const confpassword = document.getElementById("confirmPassword");
 const submitbtn = document.getElementById("submitbtn");
-const apiUrl = `http://localhost:3000`;
+const apiUrl = `http://3.110.108.119:3000`;
 
 
 submitbtn.addEventListener("click", async () => {
