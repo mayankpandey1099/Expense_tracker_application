@@ -8,7 +8,7 @@ const header3 = {
 };
 
 
-fetch("http://3.110.108.119:3000/api/expenses/filehistory", {
+fetch("http://localhost:3000/api/expenses/filehistory", {
   method: "GET",
   headers: header3,
 })

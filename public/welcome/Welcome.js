@@ -1,5 +1,5 @@
 
-const apiUrll = "http://3.110.108.119:3000";
+const apiUrll = "http://localhost:3000";
 document.addEventListener("DOMContentLoaded", function () {
   // Get references to the buttons
   const loginButton = document.getElementById("loginButton");

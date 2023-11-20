@@ -6,7 +6,7 @@ const cors = require("cors");
 const path = require("path");
 const sequelize = require("./database");
 const fs = require("fs");
-const helmet = require("helmet");
+// const helmet = require("helmet");
 const morgan = require("morgan");
 
 //importing middleware
@@ -39,29 +39,29 @@ const accessLogStream = fs.createWriteStream(
 
 app.use(cors());
 app.use(express.json());
-app.use(
-  helmet({
-    contentSecurityPolicy: {
-      directives: {
-        defaultSrc: ["'self'"],
-        scriptSrc: [
-          "'self'",
-          "'unsafe-inline'",
-          "https://code.jquery.com/",
-          "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/",
-        ],
-        styleSrc: [
-          "'self'",
-          "'unsafe-inline'",
-          "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/",
-        ],
-        frameSrc: ["'self'", "https://api.razorpay.com/"],
-        scriptSrcAttr: ["'self'", "'unsafe-inline'"],
-        upgradeInsecureRequests: [],
-      },
-    },
-  })
-);
+// app.use(
+//   helmet({
+//     contentSecurityPolicy: {
+//       directives: {
+//         defaultSrc: ["'self'"],
+//         scriptSrc: [
+//           "'self'",
+//           "'unsafe-inline'",
+//           "https://code.jquery.com/",
+//           "*",
+//         ],
+//         styleSrc: [
+//           "'self'",
+//           "'unsafe-inline'",
+//           "*",
+//         ],
+//         frameSrc: ["'self'", "https://api.razorpay.com/"],
+//         scriptSrcAttr: ["'self'", "'unsafe-inline'"],
+//         upgradeInsecureRequests: [],
+//       },
+//     },
+//   })
+// );
 app.use(express.static(path.join(__dirname, "public")));
 app.use(morgan("combined", { stream: accessLogStream }));
 

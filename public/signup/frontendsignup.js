@@ -1,4 +1,4 @@
-const apiUrl = `http://3.110.108.119:3000`;
+const apiUrl = `http://localhost:3000`;
 
 const signupForm = document.getElementById("signupForm");
 const errorDiv = document.getElementById("error");
