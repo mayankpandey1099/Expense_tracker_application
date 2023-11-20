@@ -44,10 +44,20 @@ app.use(
     contentSecurityPolicy: {
       directives: {
         defaultSrc: ["'self'"],
-        scriptSrc: ["'self'", "'unsafe-inline'", "*"],
-        styleSrc: ["'self'", "'unsafe-inline'", "*"],
+        scriptSrc: [
+          "'self'",
+          "'unsafe-inline'",
+          "https://code.jquery.com/",
+          "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/",
+        ],
+        styleSrc: [
+          "'self'",
+          "'unsafe-inline'",
+          "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/",
+        ],
         frameSrc: ["'self'", "https://api.razorpay.com/"],
         scriptSrcAttr: ["'self'", "'unsafe-inline'"],
+        upgradeInsecureRequests: [],
       },
     },
   })
